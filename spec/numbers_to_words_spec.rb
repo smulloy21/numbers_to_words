@@ -1,5 +1,5 @@
 require('rspec')
-require('numbers_to_words.rb')
+require('numbers_to_words_remix.rb')
 
 describe('Fixnum#numbers_to_words') do
   it('gives the written name of a single digit') do
@@ -13,7 +13,5 @@ describe('Fixnum#numbers_to_words') do
   end
   it('gives the written name of any three digit number') do
     expect(305.numbers_to_words()).to(eq("three hundred five"))
-
-
   end
 end
